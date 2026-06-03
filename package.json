@@ -1,0 +1,40 @@
+{
+  "name": "super-llm-wiki",
+  "version": "1.0.0",
+  "description": "Toolkit for improved LLM Wiki",
+  "author": "Pedro Peretto",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroHPeretto/Super-LLM-Wiki.git"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --fix",
+    "format": "prettier . --write",
+    "prepare": "husky",
+    "changelog": "auto-changelog"
+  },
+  "module": "main.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@commitlint/cli": "^21.0.2",
+    "@commitlint/config-conventional": "^21.0.2",
+    "@eslint/js": "^10.0.1",
+    "@types/bun": "latest",
+    "eslint": "^10.4.1",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.6.0",
+    "husky": "^9.1.7",
+    "jiti": "^2.7.0",
+    "prettier": "3.8.3",
+    "typescript-eslint": "^8.60.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "auto-changelog": "^2.6.0"
+  }
+}
